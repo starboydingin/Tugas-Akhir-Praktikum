@@ -1,3 +1,5 @@
+✨ Project ini merupakan bagian dari latihan praktikum untuk memahami alur kerja pengembangan web dan version control menggunakan Git & GitHub.
+
 🎨 Portfolio Website - Tugas Akhir Praktikum Pemrograman Web
 
 Repositori ini merupakan project **Tugas Akhir Praktikum Pemrograman Web**, berisi website portfolio pribadi yang dibuat menggunakan **HTML** dan **CSS**.  
