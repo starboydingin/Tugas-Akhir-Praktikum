@@ -22,7 +22,6 @@ Tujuan proyek ini adalah untuk memahami:
 
 Langkah-langkah yang telah dilakukan untuk menginisialisasi dan mengelola project ini:
 
-bash
 1. Inisialisasi repository Git lokal
 git init
 
