@@ -23,35 +23,37 @@ Tujuan proyek ini adalah untuk memahami:
 Langkah-langkah yang telah dilakukan untuk menginisialisasi dan mengelola project ini:
 
 1. Inisialisasi repository Git lokal
+--
 git init
+--
 
-2. Konfigurasi user lokal
+3. Konfigurasi user lokal
 git config --local user.name "username"
 git config --local user.email "example@gmail.com"
 
-3. Menambahkan file pertama (index.html)
+4. Menambahkan file pertama (index.html)
 git add index.html
 git commit -m "Add index.html"
 
-4. Menambahkan file CSS dan update index
+5. Menambahkan file CSS dan update index
 git add style.css
 git commit -m "Add style.css and update to index.html"
 
-5. Menghubungkan ke repository GitHub
+6. Menghubungkan ke repository GitHub
 git remote add origin https://github.com/username-github/nama-repository-github.git
 
-6. Push pertama ke branch master
+7. Push pertama ke branch master
 git push -u origin master
 
-7. Membuat branch baru untuk eksperimen navigasi
+8. Membuat branch baru untuk eksperimen navigasi
 git branch navigation
 git checkout navigation
 
-8. Commit perubahan navigasi
+9. Commit perubahan navigasi
 git add .
 git commit -m "add navigation menu"
 
-9. Kembali ke branch utama dan merge hasil eksperimen
+10. Kembali ke branch utama dan merge hasil eksperimen
 git checkout master
 git merge navigation
 git branch -d navigation
