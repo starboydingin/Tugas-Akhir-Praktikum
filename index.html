@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman Utama</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="fixed w-full top-0 z-50 backdrop-blur-md bg-white/80 shadow-sm transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-extrabold text-blue-600 tracking-tight">
+        Adwika<span class="text-gray-800">'s</span> Company
+      </div>
+      <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <a href="#hero" class="relative group">
+          Home
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#features" class="relative group">
+          Fitur
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#about" class="relative group">
+          Tentang
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#contact" class="relative group">
+          Kontak
+          <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+        </a>
+      </nav>
+      <a href="#contact"class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition duration-300">
+      Buat Pengaduan
+      </a>
+      
+      <button id="menu-btn" class="md:hidden flex items-center">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-gray-200 shadow-inner">
+      <a href="#hero" class="block px-6 py-3 text-gray-700 hover:bg-blue-50 transition">Home</a>
+      <a href="#features" class="block px-6 py-3 text-gray-700 hover:bg-blue-50 transition">Fitur</a>
+      <a href="#about" class="block px-6 py-3 text-gray-700 hover:bg-blue-50 transition">Tentang</a>
+      <a href="#contact" class="block px-6 py-3 text-gray-700 hover:bg-blue-50 transition">Kontak</a>
+      <a href="form-pengaduan.html"
+      class="block px-6 py-3 bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">Buat Pengaduan</a>
+    </div>
+  </header>
+  
+  <section id="hero" class="relative pt-40 pb-32 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white overflow-hidden">
+    <div class="absolute top-0 left-0 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-300 opacity-10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Selamat Datang di <span class="text-yellow-300">Adwika's Company</span>
+      </h1>
+      <p class="text-lg md:text-xl text-blue-100 mb-10">
+         Kami hadir untuk membantu Anda menemukan solusi digital terbaik dengan teknologi modern dan layanan profesional.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#features"
+         class="border border-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-700 transition duration-300">
+         Jelajahi Fitur
+        </a>
+      </div>
+    </div>
+    
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+      <svg class="relative block w-full h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+      preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.25-168.06-15.39-250.45,3.73C370.51,36.57,287.91,82.17,205.7,101.78,134.38,118.61,62,111.34,0,92.83V120H1200V95.8C1132.19,117.57,1059.48,113.75,985.66,92.83Z"
+        fill="#ffffff"></path>
+      </svg>
+    </div>
+  </section>
+  
+  <section id="features" class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Fitur Unggulan Kami</h2>
+      <p class="text-gray-600 mb-12 text-lg">Kami menghadirkan fitur terbaik untuk mendukung kebutuhan digital Anda.</p>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div
+        class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.03] border-t-4 border-blue-500">
+        <div
+        class="mx-auto mb-6 w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 text-4xl shadow-sm">
+          ⚡
+        </div>
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Cepat dan Responsif</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Layanan kami dirancang untuk memberikan pengalaman cepat dan optimal di semua perangkat.
+        </p>
+      </div>
+      <div 
+      class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.03] border-t-4 border-indigo-500">
+      <div
+      class="mx-auto mb-6 w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-4xl shadow-sm">
+      🔒
+    </div>
+    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Keamanan Terjamin</h3>
+    <p class="text-gray-600 leading-relaxed">
+      Data Anda dilindungi dengan sistem keamanan berlapis untuk menjaga kerahasiaan dan integritas informasi.
+    </p>
+  </div>
+  
+  <div
+  class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.03] border-t-4 border-purple-500">
+  <div
+  class="mx-auto mb-6 w-16 h-16 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-4xl shadow-sm">
+  🌐
+        </div>
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Akses Global</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Platform kami dapat diakses kapan pun dan di mana pun, dengan performa stabil di seluruh dunia.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="relative py-20 bg-white overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-white opacity-60"></div>
+  <div class="relative max-w-6xl mx-auto px-6 lg:flex lg:items-center lg:space-x-10">
+    <div class="lg:w-1/2 mb-10 lg:mb-0">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920324.png" alt="Digital Solutions"
+        class="w-72 mx-auto lg:w-96 drop-shadow-lg hover:scale-105 transition-transform duration-300">
+    </div>
+
+    <div class="lg:w-1/2 text-center lg:text-left">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">
+        Tentang <span class="text-blue-600">Adwika's Company</span>
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-6">
+        Adwika's Company adalah platform inovatif yang menghadirkan berbagai solusi digital untuk kebutuhan bisnis dan
+        personal. Kami berfokus pada pengembangan teknologi yang efisien, aman, dan mudah digunakan. Dengan tim profesional
+        yang berpengalaman, kami berkomitmen membantu klien beradaptasi di era digital melalui layanan yang andal, modern,
+        dan berorientasi pada hasil.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <section id="contact" class="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-4">Hubungi Kami</h2>
+    <p class="text-center text-gray-600 mb-12">
+      Ada pertanyaan, saran, atau masukan? Jangan ragu untuk menghubungi kami melalui formulir di bawah ini.
+    </p>
+
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl mx-auto p-10 relative z-10">
+      <form class="space-y-6">
+
+        <div class="relative">
+          <input id="nama" type="text"
+            class="peer w-full border border-gray-300 rounded-lg p-4 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+            placeholder="Nama Lengkap" />
+          <label for="nama"
+            class="absolute left-4 top-3.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-600">
+            Nama Lengkap
+          </label>
+        </div>
+
+        <div class="relative">
+          <input id="email" type="email"
+            class="peer w-full border border-gray-300 rounded-lg p-4 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+            placeholder="Email Anda" />
+          <label for="email"
+            class="absolute left-4 top-3.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-600">
+            Email
+          </label>
+        </div>
+
+        <div class="relative">
+          <textarea id="pesan" rows="5"
+            class="peer w-full border border-gray-300 rounded-lg p-4 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none"
+            placeholder="Tulis pesan Anda di sini..."></textarea>
+          <label for="pesan"
+            class="absolute left-4 top-3.5 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm peer-focus:text-blue-600">
+            Pesan
+          </label>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg font-semibold shadow-md hover:from-blue-700 hover:to-indigo-700 transition duration-300 transform hover:scale-[1.02]">
+          Kirim Pesan
+        </button>
+
+      </form>
+    </div>
+
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-10 -right-10 w-48 h-48 bg-blue-300 rounded-full blur-3xl opacity-20"></div>
+      <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-indigo-300 rounded-full blur-3xl opacity-20"></div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-blue-600 text-white py-6">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p>© 2025 Adwika's Company. All rights reserved.</p>
+    <div class="flex justify-center space-x-6 mt-3">
+      <a href="#" class="hover:text-gray-200 transition" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5.01 3.66 9.16 8.44 9.93v-7.03H8.1v-2.9h2.34V9.41c0-2.3 1.37-3.57 3.47-3.57.99 0 2.02.18 2.02.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.9h-2.1V22c4.78-.77 8.44-4.92 8.44-9.93z"/>
+        </svg>
+      </a>
+      <a href="#" class="hover:text-gray-200 transition" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.27 4.27 0 00-7.3 3.89A12.13 12.13 0 013 4.79a4.26 4.26 0 001.32 5.69 4.22 4.22 0 01-1.93-.53v.05a4.27 4.27 0 003.43 4.18 4.27 4.27 0 01-1.92.07 4.27 4.27 0 003.98 2.96A8.57 8.57 0 012 19.54 12.07 12.07 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.35-.02-.53A8.3 8.3 0 0022.46 6z"/>
+        </svg>
+      </a>
+      <a href="#" class="hover:text-gray-200 transition" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.25a1 1 0 110 2 1 1 0 010-2z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
